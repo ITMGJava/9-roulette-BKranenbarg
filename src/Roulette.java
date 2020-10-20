@@ -39,7 +39,7 @@ public class Roulette {
                 Random r = new Random();
                 uitkomst = r.nextInt(number);
                 //cheat code
-                System.out.println(uitkomst);
+                //System.out.println(uitkomst);
                 //gebruikersinvoer s initiëren
                 Scanner s = new Scanner(System.in);
                 do {
@@ -50,7 +50,7 @@ public class Roulette {
                     } else {
                         bedrag = (short) (bedrag + inzet);
                     }
-                } while (userGuess < 0 || userGuess > 36);
+                } while (userGuess < 1 || userGuess > 36);
                 System.out.println(gok + userGuess);
                 System.out.println(uitslag + uitkomst);
                 if (uitkomst == 0) {
